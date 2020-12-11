@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Orleans Animal Rescue - Adoption Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner" id="top">Header
+
+    <nav>
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label class="nav-label" for="nav-check">Navigate</label>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="form.html">Adoption Form</a></li>
+        <li><a href="services.html">Pet Services</a></li>
+        <li><a href="tails.html">Happy Tails</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main role="main" id="main">Main
+
+    <form class="max-length" method="POST" action="https://formspree.io/ktucker@rogers.com">
+
+    <fieldset>
+      <legend>Personal Information</legend>
+      <div>
+        <label for="name">First name</label>
+        <input id="firstname" name="firstname" type="text" required>
+      </div>
+      <div>
+        <label for="lastname">Last name</label>
+        <input id="lastname" name="lastname" type="text" required>
+      </div>
+      <div>
+        <label for="phone">Phone number</label>
+        <input id="phone" type="tel" required>
+      </div>
+        <label for="email">Email</label>
+        <input id="email" type="email" required>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Mailing Address</legend>
+      <div>
+        <label for="street-address">Street Address</label>
+        <input id="street-address">
+      </div>
+      <div class="push space-right unit xs-1 l-1-2">
+        <label for="province">Province</label>
+        <input id="province" list="province-list" placeholder="Select a province" required>
+        <datalist id="province-list">
+          <option value="Alberta">Alberta</option>
+          <option value="British Columbia">British Columbia</option>
+          <option value="Manitoba">Manitoba</option>
+          <option value="New Brunswick">New Brunswick</option>
+          <option value="Newfoundland & Labrador">Newfoundland & Labrador</option>
+          <option value="Northwest Territories">Northwest Territories</option>
+          <option value="Nova Scotia">Nova Scotia</option>
+          <option value="Nunavut">Nunavut</option>
+          <option value="Ontario">Ontario</option>
+          <option value="Prince Edward Island">Prince Edward Island</option>
+          <option value="Québec">Québec</option>
+          <option value="Saskatchewan">Saskatchewan</option>
+          <option value="Yukon">Yukon</option>
+        </datalist>
+      </div>
+      <div>
+        <label for="country">Country</label>
+        <input id="country">
+      </div>
+      <div>
+        <label for="postal-code">Postal Code</label>
+        <input id="postal-code">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Living Arrangements</legend>
+      <div>
+        Type of residence:
+
+        <input id="residence-house" type="radio" name="residence">
+        <label for="residence-house">House</label>
+
+        <input type="radio" id="residence-semi" name="residence">
+        <label for="residence-semi">Semi-Detached</label>
+
+        <input type="radio" id="residence-country" name="residence">
+        <label for="residence-country">Country Home</label>
+
+        <input type="radio" id="residence-farm" name="residence">
+        <label for="residence-farm">Farm</label>
+
+        <input type="radio" id="residence-condo" name="residence">
+        <label for="residence-condo">Condo</label>
+
+        <input type="radio" id="residence-apartment" name="residence">
+        <label for="residence-apartment">Apartment</label>
+      </div>
+
+      <div>
+        Do you:
+
+        <input id="ownership-own" type="radio" name="ownership">
+        <label for="ownership-own">Own</label>
+
+        <input type="radio" id="ownership-rent" name="ownership">
+        <label for="ownership-rent">Rent</label>
+
+        <input type="radio" id="ownership-with" name="ownership">
+        <label for="ownership-with">Live with owner of home</label>
+
+        <input type="radio" id="ownership-parents" name="ownership">
+        <label for="ownership-parents">Live with Parents</label>
+      </div>
+
+      <div>
+      Are you allowed pets?
+        <input type="radio" id="allowed-yes" name="allowed">
+        <label for="allowed-yes">Yes</label>
+        <input type="radio" id="allowed-no" name="allowed">
+        <label for="allowed-No">No</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Type of Pet</legend>
+      Sex of pet?
+        <input type="radio" id="sex-male" name="sex">
+        <label for="sex-male">Male</label>
+        <input type="radio" id="sex-female" name="sex">
+        <label for="sex-female">Female</label>
+        <input type="radio" id="sex-either" name="sex">
+        <label for="sex-either">Either</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What size of dog are you looking for?</legend>
+      <div>
+          <input id="" type="checkbox">
+          <label for="xsmall">X-Small</label>
+        </div>
+        <div>
+          <input id="small" type="checkbox">
+          <label for="small">Small</label>
+        </div>
+        <div>
+          <input id="medium" type="checkbox">
+          <label for="medium">Medium</label>
+        </div>
+        <div>
+          <input id="large" type="checkbox">
+          <label for="large">Large</label>
+        </div>
+        <div>
+        <input id="xlarge" type="checkbox">
+        <label for="xlarge">X-Large</label>
+      </div>
+  <div>
+      <input id="xxlarge" type="checkbox">
+      <label for="xxlarge">XX-Large</label>
+    </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Questions</legend>
+      <div class="push">
+        <label for="questions">Please let us know any comments, questions, or concerns. (optionl)</label>
+        <textarea id="questions" name="message" required></textarea>
+      </div>
+    </fieldset>
+
+    <div>
+      <button class="btn" type="submit">Apply</button>
+    </div>
+    <input type="hidden" name="MyForm" value="adoption-application">
+  </form>
+
+  </main>
+
+  <aside role="complementary">Sidebar
+
+
+
+  </aside>
+
+  <footer role="contentinfo">
+
+    <p>&copy; O.A.R. · <a href="#top">Top</a></p>
+
+  </footer>
+
+</body>
+</html>
