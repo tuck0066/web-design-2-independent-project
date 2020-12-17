@@ -82,6 +82,10 @@ h1 {
   font-size: 1.5rem;
 }
 
+.logo {
+  text-align: center;
+}
+
 /*
  * #465f80 - Footer, #cadeff - BG, #204980 - Text, #4093ff - Nav Hover, #3375cc - Misc
   */
