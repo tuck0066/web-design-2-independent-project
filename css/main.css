@@ -161,6 +161,16 @@ main {
 
 /*
 * HAPPY TAILS
+
+.masthead {
+  background-color: #cadeff;
+  color: #fff;
+  border-bottom: 3px solid #8cbeff;
+  border-top: 3px solid #465f80;
+  background-image: url("../images/leaf-bg.svg") repeat left top / 64px auto #204980;
+  margin-bottom: auto;
+}
+
 */
 
 .masthead {
@@ -168,7 +178,6 @@ main {
   color: #fff;
   border-bottom: 3px solid #8cbeff;
   border-top: 3px solid #465f80;
-  background: url("../images/leaf-bg.svg") repeat left top / 64px auto #204980;
   margin-bottom: auto;
 }
 
