@@ -162,23 +162,20 @@ main {
 /*
 * HAPPY TAILS
 
+  Masthead - background-image: url("../images/leaf-bg.svg") repeat left top / 64px auto #204980;
+
+  */
+
 .masthead {
   background-color: #cadeff;
   color: #fff;
   border-bottom: 3px solid #8cbeff;
   border-top: 3px solid #465f80;
-  background-image: url("../images/leaf-bg.svg") repeat left top / 64px auto #204980;
   margin-bottom: auto;
 }
 
-*/
-
-.masthead {
-  background-color: #cadeff;
-  color: #fff;
-  border-bottom: 3px solid #8cbeff;
-  border-top: 3px solid #465f80;
-  margin-bottom: auto;
+.logo {
+  text-align: center;
 }
 
 .banner {
@@ -240,7 +237,6 @@ footer {
   background-image: url("../images/seamless-web-texture-light-blue.jpg");
   background-color: #cadeff;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 75rem;
 }
 
 /*
@@ -281,20 +277,12 @@ footer {
     background-color: pink;
   }
 
-  .about-page-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
 
   h1 {
     background-color: orange;
-  }
-
-  .about-page-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
 
 }
